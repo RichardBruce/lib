@@ -92,6 +92,11 @@ SPD : $(LIBARYS_PATH)/spd$(SPD_VER)
 	@( cd $(RAPTOR_DATA)/spd$(SPD_VER) ; cp $(LIBARYS_PATH)/spd$(SPD_VER)/teapot   teapot_scenes   ; cd teapot_scenes   ; ./teapot   -r 1 -s 12       > teapot_12.nff  ; ./teapot   -r 1 -s 38       > teapot_38.nff  ; ./teapot   -r 1 -s 123      > teapot_123.nff ; ./teapot   -r 1 -s 389       > teapot_389.nff )
 	@( cd $(RAPTOR_DATA)/spd$(SPD_VER) ; cp $(LIBARYS_PATH)/spd$(SPD_VER)/tetra    tetra_scenes    ; cd tetra_scenes    ; ./tetra    -r 1 -s  6       > tetra_6.nff    ; ./tetra    -r 1 -s  8       > tetra_8.nff    ; ./tetra    -r 1 -s   9      > tetra_9.nff    ; ./tetra    -r 1 -s  11       > tetra_11.nff   )
 	@( cd $(RAPTOR_DATA)/spd$(SPD_VER) ; cp $(LIBARYS_PATH)/spd$(SPD_VER)/tree     tree_scenes     ; cd tree_scenes     ; ./tree     -r 1 -s  4 -t 4  > tree_4.nff     ; ./tree     -r 1 -s  5 -t 9  > tree_7.nff     ; ./tree     -r 1 -s  10 -t 6 > tree_10.nff    ; ./tree     -r 1 -s  14 -t  4 > tree_14.nff    )
+	@echo "Editting spd$(SPD_VER) resolutions....."
+	@( cd $(RAPTOR_DATA)/spd$(SPD_VER)/jacks_scenes ; change_resolution.pl --format nff --x_res 640 --y_res 480 --file jacks_2.nff )
+	@( cd $(RAPTOR_DATA)/spd$(SPD_VER)/jacks_scenes ; change_resolution.pl --format nff --x_res 640 --y_res 480 --file jacks_3.nff )
+	@( cd $(RAPTOR_DATA)/spd$(SPD_VER)/jacks_scenes ; change_resolution.pl --format nff --x_res 640 --y_res 480 --file jacks_4.nff )
+	@( cd $(RAPTOR_DATA)/spd$(SPD_VER)/jacks_scenes ; change_resolution.pl --format nff --x_res 640 --y_res 480 --file jacks_5.nff )
 
 # Boost c++ libraries for c++ utilities
 boost_$(BOOST_VER) : boost_$(BOOST_VER).tar.bz2
