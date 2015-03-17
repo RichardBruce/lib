@@ -55,6 +55,13 @@ ffmpeg : ffmpeg.tar.gz
 	@tar xfz ffmpeg.tar.gz
 	@echo "Building ffmpeg....."
 	@(cd ffmpeg/ ; ./configure --prefix=$(CWD)/ffmpeg --disable-indev=v4l --disable-indev=v4l2 --enable-memalign-hack ; make -s ; make -s install)
+
+# FFmpeg for optimised video encoding
+libtga-$(LIBTGA_VER) : libtga-$(LIBTGA_VER).tar.gz
+	@echo "Unzipping libtga....."
+	@tar xfz libtga-$(LIBTGA_VER).tar.gz
+	@echo "Building libtga....."
+	@(cd libtga-$(LIBTGA_VER)/ ; ./configure --prefix=$(CWD)/libtga-$(LIBTGA_VER) ; make -s ; make -s install)
         
 # SPD for test scenes
 spd$(SPD_VER) : spd$(SPD_VER).tar.gz
