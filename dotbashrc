@@ -12,7 +12,7 @@ export SPD_VER=3_14
 export TBB_VER=41_20130613oss
 export FFTW_VER=3.2.2
 export LIBTGA_VER=1.0.1
-export BOOST_VER=1_54_0
+export BOOST_VER=1_61_0
 
 export BOOST_LIB_PATH=${LIBARYS_PATH}/boost_${BOOST_VER}/lib/
 export BOOST_INCLUDE_PATH=${LIBARYS_PATH}/boost_${BOOST_VER}/

@@ -12,7 +12,7 @@ setenv SPD_VER 3_14
 setenv TBB_VER 22_20090809oss
 setenv FFTW_VER 3.2.2
 setenv LIBTGA_VER=1.0.1
-setenv BOOST_VER 1_54_0
+setenv BOOST_VER 1_61_0
 
 setenv BOOST_LIB_PATH ${LIBARYS_PATH}/boost_${BOOST_VER}/lib/
 setenv BOOST_INCLUDE_PATH ${LIBARYS_PATH}/boost_${BOOST_VER}/include/
