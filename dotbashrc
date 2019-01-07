@@ -3,13 +3,13 @@
 export LIBARYS_PATH=`pwd`
 
 # Library version numbers
-export SDL_VER=2.0.3
+export SDL_VER=2.0.9
 export SDLTTF_VER=2.0.12
 export SDLIMAGE_VER=2.0.0
 export FREEFONT_VER=20100919
 export FREETYPE_VER=2.4.10
 export SPD_VER=3_14
-export TBB_VER=41_20130613oss
+export TBB_VER=-2019_U2
 export FFTW_VER=3.2.2
 export LIBTGA_VER=1.0.1
 export BOOST_VER=1_61_0
