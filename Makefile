@@ -47,7 +47,7 @@ fftw-$(FFTW_VER) : fftw-$(FFTW_VER).tar.gz
 	@echo "Unzipping fftw-$(FFTW_VER)....."
 	@tar xfz fftw-$(FFTW_VER).tar.gz
 	@echo "Building fftw-$(FFTW_VER)....."
-	@(cd fftw-$(FFTW_VER)/ ; ./configure --silent --prefix $(CWD)/fftw-$(FFTW_VER) --enable-float ; make -s ; make -s install)
+	@(cd fftw-$(FFTW_VER)/ ; ./configure --silent --prefix $(CWD)/fftw-$(FFTW_VER) --enable-shared --enable-float ; make -s ; make -s install)
 
 # FFmpeg for optimised video encoding
 ffmpeg : ffmpeg.tar.gz
