@@ -36,9 +36,9 @@ freetype-$(FREETYPE_VER) : freetype-$(FREETYPE_VER).tar.gz
 	@(cd freetype-$(FREETYPE_VER)/ ; ./configure --silent --prefix $(CWD)/freetype-$(FREETYPE_VER) ; make -s ; make -s install)
 
 # TBB library for threading
-tbb$(TBB_VER) : tbb$(TBB_VER)_src.tgz
+tbb$(TBB_VER) : tbb$(TBB_VER).tgz
 	@echo "Unzipping TBB....."
-	@tar xfz tbb$(TBB_VER)_src.tgz
+	@tar xfz tbb$(TBB_VER).tgz
 	@echo "Building TBB..."
 	@(cd tbb$(TBB_VER)/ ; make -s work_dir=./build/build )
 
